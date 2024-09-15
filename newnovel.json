@@ -1,0 +1,807 @@
+{
+	"parameters": {
+		"text_panel": {
+			"size": [
+				"95%",
+				"25%"
+			],
+			"position": [],
+			"color": "rgba(242,242,242,0.67)",
+			"color_text": "#000000",
+			"indent_text": "8px",
+			"indent_bottom": "32px",
+			"dialog_speed": "15",
+			"art": {
+				"en": ""
+			}
+		},
+		"name_panel": {
+			"size": [
+				"0",
+				"32px"
+			],
+			"position": [
+				"0",
+				"0",
+				"-36px",
+				"0"
+			],
+			"style": "border-radius:8px;",
+			"indent_text": "0 8px",
+			"color_text": "#fff",
+			"color": "rgb(189,61,54)",
+			"art": {
+				"en": ""
+			},
+			"art_size": "cover",
+			"className": "themayor",
+			"art_align": [
+				"left",
+				"center"
+			]
+		},
+		"title": {
+			"en": "new novel"
+		},
+		"launch_story": "block_1",
+		"key": {},
+		"languares": [
+			"en"
+		],
+		"buttons": [
+			{
+				"name": "tue_back",
+				"position": [
+					"2.5%",
+					0,
+					0,
+					"32px"
+				],
+				"size": [
+					"25%",
+					"25%"
+				],
+				"color_text": "#000",
+				"text": "⪦",
+				"hotspot": [
+					"0%",
+					"0%"
+				],
+				"align": [
+					"start",
+					"end"
+				],
+				"indent_text": "8px 14px",
+				"art": {
+					"en": ""
+				},
+				"sound": {
+					"en": ""
+				}
+			},
+			{
+				"name": "tue_next",
+				"position": [
+					0,
+					"2.5%",
+					0,
+					"32px"
+				],
+				"size": [
+					"25%",
+					"25%"
+				],
+				"color_text": "#000",
+				"text": "⪧",
+				"hotspot": [
+					"0%",
+					"0%"
+				],
+				"align": [
+					"end",
+					"end"
+				],
+				"indent_text": "8px 14px",
+				"art": {
+					"en": ""
+				},
+				"sound": {
+					"en": ""
+				},
+				"size_text": "Larger",
+				"font_family": "Monospace",
+				"style": "font-family: 'Courier New', Courier, monospace;\nfont-weight: bold;\n"
+			}
+		],
+		"autosave": true,
+		"font": "Arial",
+		"font_size": "21px",
+		"variables": {},
+		"characters": {
+			"char0": {
+				"en": "News Caster: BlueGooGary",
+				"color": "rgba(163,178,225,0.92)",
+				"color_text": "rgb(217,32,23)",
+				"className": "newsman"
+			},
+			"char1": {
+				"en": "The Mayor",
+				"color": "rgba(51,255,182,0.92)",
+				"color_text": "#000048",
+				"className": "themayor"
+			}
+		},
+		"plugins": [
+			"anijs-master/dist/anijs-min.js"
+		],
+		"style_file": "",
+		"icon": "",
+		"font_files": {
+			"NameFont1": ""
+		},
+		"sounds": {},
+		"css": ".text {\n    font-weight: bold;\n    font-size: 1.5em;\n    font-style: italic;\n    animation-direction: alternate-reverse;\n}\n\n.text2 {\n\ttext-shadow: 1px 0 5px;\n    font-weight: bold;\n    font-size: 1.5em;\n    font-style: italic;\n    animation-direction: alternate-reverse;\n}\n\n.fade_in {\n    animation: fade_in 3s;\n    animation-fill-mode: forwards;\n}\n\n@keyframes fade_in {\n    from {\n        opacity: 0;\n    }\n\n    to {\n        opacity: 1;\n    }\n}\n\n.fade_in_up {\n    animation: fade_in_up 2s;\n    animation-fill-mode: forwards;\n    opacity: 0;\n}\n\n@keyframes fade_in_up {\n    from {\n        transform: translate3d(0, 40px, 0)\n    }\n\n    to {\n        transform: translate3d(0, 0, 0);\n        opacity: 1\n    }\n}\n\n.fade_in_down {\n    animation: fade_in_down 2s;\n    animation-fill-mode: both;\n    opacity: 0;\n}\n\n@keyframes fade_in_down {\n    from {\n        transform: translate3d(0, -40px, 0px)\n    }\n\n    to {\n        transform: translate3d(0, 0, 0);\n        opacity: 1\n    }\n}\n\n.fade_in_right {\n    animation: fade_in_right 2s;\n    animation-fill-mode: both;\n    opacity: 0;\n}\n\n@keyframes fade_in_right {\n    from {\n        transform: translate3d(-40px, 0px, 0px)\n    }\n\n    to {\n        transform: translate3d(0, 0, 0);\n        opacity: 1\n    }\n}\n\n.fade_in_left {\n    animation: fade_in_left 3s;\n    animation-fill-mode: both;\n    opacity: 0;\n}\n\n@keyframes fade_in_left {\n    from {\n        transform: translate3d(40px, 0px, 0px)\n    }\n\n    to {\n        transform: translate3d(0, 0, 0);\n        opacity: 1\n    }\n}\n\n\n/*\n  ==============================================\n\n  boomerang\n\n  ==============================================\n  */\n\n@keyframes boomerang {\n    10% {\n        z-index: 1;\n        transform: rotate(-20deg);\n    }\n\n    35% {\n        z-index: 1;\n        transform: translate(220%, -55%) scale(0.5) rotate(-200deg);\n    }\n\n    74% {\n        z-index: -1;\n    }\n\n    75% {\n        transform: translate(-200%, 55%) scale(0.9) rotate(-860deg);\n    }\n\n    80% {\n        z-index: 1;\n    }\n\n    90% {\n        z-index: 1;\n        transform: translate(0%, 0%) rotate(-10deg);\n    }\n}\n\n.boomerang {\n    animation-name: boomerang;\n    animation-duration: 1.5s;\n}\n\n\n/*\n  =========================================================\n\n  swivel chair\n\n  =========================================================\n  */\n\n@keyframes swivelChair {\n    from {\n        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);\n        animation-timing-function: ease-in;\n        opacity: 1;\n    }\n\n    40% {\n        transform: perspective(400px) rotate3d(0, 1, 0, -20deg);\n        animation-timing-function: ease-in;\n    }\n\n    60% {\n        transform: perspective(400px) rotate3d(0, 1, 0, 10deg);\n        opacity: 1;\n    }\n\n    80% {\n        transform: perspective(400px) rotate3d(0, 1, 0, -5deg);\n    }\n\n    to {\n        transform: perspective(400px);\n    }\n}\n\n.swivelChair {\n    animation-name: swivelChair;\n    animation-duration: 2s;\n}\n\n/* \n  ===========================================\n\n  gettin' in yo Face \n\n  ===========================================\n  */\n\n@keyframes gettinInYoFace {\n    from {\n        opacity: 1;\n        transform: scale(1.0);\n    }\n\n    to {\n        opacity: 1;\n        transform: scale(2.0);\n    }\n}\n\n.gettinInYoFace {\n    animation-fill-mode: forwards;\n    animation-timing-function: ease;\n    animation-name: gettinInYoFace;\n    animation-duration: 2s;\n}\n\n\n/*\n  =============================================\n\n  airplane propeller\n\n  =============================================s\n  */\n\n@keyframes airplanePropeller {\n    from {\n        transform-origin: center;\n        transform: rotate(-20000deg);\n        opacity: 1;\n    }\n\n    to {\n        transform-origin: center;\n        transform: none;\n        opacity: 1;\n    }\n}\n\n.airplanePropeller {\n    animation-name: airplanePropeller;\n    animation-duration: 5s;\n    animation-timing-function: ease-in-out;\n}\n\n/*\n  ======================================\n\n   pulsate \n\n  ======================================\n  */\n\n@-webkit-keyframes pulsate {\n    from {\n        opacity: 1.0;\n    }\n\n    10% {\n        opacity: 0;\n    }\n\n    20% {\n        opacity: 1.0;\n    }\n\n    30% {\n        opacity: 0;\n    }\n\n    40% {\n        opacity: 1.0;\n    }\n\n    50% {\n        opacity: 0;\n    }\n\n    60% {\n        opacity: 1.0;\n    }\n\n    70% {\n        opacity: 0;\n    }\n\n    80% {\n        opacity: 1.0;\n    }\n\n    90% {\n        opacity: 0;\n    }\n\n    to {}\n}\n\n@keyframes pulsate {\n    from {\n        opacity: 1.0;\n    }\n\n    10% {\n        opacity: 0;\n    }\n\n    20% {\n        opacity: 1.0;\n    }\n\n    30% {\n        opacity: 0;\n    }\n\n    40% {\n        opacity: 1.0;\n    }\n\n    50% {\n        opacity: 0;\n    }\n\n    60% {\n        opacity: 1.0;\n    }\n\n    70% {\n        opacity: 0;\n    }\n\n    80% {\n        opacity: 1.0;\n    }\n\n    90% {\n        opacity: 0;\n    }\n\n    to {}\n}\n\n.pulsate {\n    animation-name: pulsate;\n    animation-duration: 5s;\n}\n\n/*\n  =====================================\n\n   candle in the wind \n\n  =====================================\n  */\n\n@keyframes candleInTheWind {\n    0% {\n        opacity: 0;\n    }\n\n    12.5% {\n        opacity: .25;\n        transform: skewX(-10deg);\n    }\n\n    25% {\n        opacity: 0;\n    }\n\n    37.5% {\n        opacity: 0;\n        transform: skewX(-10deg);\n    }\n\n    50% {\n        opacity: .75;\n    }\n\n    62.5% {\n        opacity: 0;\n    }\n\n    75% {\n        opacity: 1;\n        transform: skewX(-5deg);\n    }\n\n    87.5% {\n        opacity: .5;\n    }\n\n    100% {\n        opacity: 1;\n    }\n}\n\n.candleInTheWind {\n    opacity: 0;\n    animation-name: candleInTheWind;\n    animation-duration: 0.7s;\n    animation-fill-mode: forwards;\n}\n\n\n\n/*\n  =======================================\n\n   highlighter \n\n  =======================================\n  */\n\n@keyframes highlighter {\n    0% {\n        background-color: rgba(0, 255, 255, 0);\n        background-color: rgba(0, 255, 255, 128);\n    }\n\n    100% {\n        background-color: rgba(0, 255, 255, 0);\n        background-color: rgba(127, 219, 255, 0);\n    }\n}\n\n@keyframes highlighter-text {\n    0% {\n        color: yellow;\n        color: #0074d9;\n    }\n\n    100% {\n        color: inherit;\n    }\n}\n\n.highlighter {\n    animation-name: highlighter;\n    animation-duration: 2s;\n    animation-fill-mode: forwards;\n}\n\n.highlight-text {\n    animation-name: highlighter-text;\n    animation-duration: 2s;\n}\n\n/*\n  =======================================\n\n  lawnmower\n\n  =======================================\n  */\n\n@keyframes lawnMower {\n    0% {\n        opacity: 1;\n    }\n\n    to {\n        opacity: 1;\n        transform: translate3d(0, 0, 0) rotateY(12225deg);\n    }\n}\n\n.lawnMower {\n    animation-duration: 5s;\n    animation-name: lawnMower;\n    animation-timing-function: ease-in-out;\n}\n\n\n\n/*\n  =======================================\n\n  bungee\n\n  =======================================\n  */\n\n@keyframes bungee {\n    0% {\n        opacity: 1;\n    }\n\n    25% {\n        opacity: 1;\n        transform: scale3d(.1, .1, .1);\n    }\n\n    50% {\n        opacity: 1;\n        transform: scale3d(.1, .1, .1);\n    }\n\n    to {\n        opacity: 1;\n    }\n}\n\n.bungee {\n    animation-name: bungee;\n    animation-duration: 2s;\n    animation-timing-function: ease-in-out;\n}\n\n\n/*\n  =======================================\n\n  nope\n\n  =======================================\n  */\n\n@keyframes nope {\n    0% {\n        transform: translateX(0);\n    }\n\n    6.5% {\n        transform: translateX(-7px) rotateY(-10deg);\n    }\n\n    18.5% {\n        transform: translateX(6px) rotateY(8deg);\n    }\n\n    31.5% {\n        transform: translateX(-4px) rotateY(-6deg);\n    }\n\n    43.5% {\n        transform: translateX(3px) rotateY(4deg);\n    }\n\n    50% {\n        transform: translateX(0);\n    }\n}\n\n.nope {\n    animation-name: nope;\n    animation-duration: 2s;\n    animation-timing-function: ease-in-out;\n}\n\n/*\n  =======================================\n\n  heartbeat\n\n  =======================================\n  */\n\n@keyframes heartBeat {\n    from {\n        transform: scale(1.0);\n    }\n\n    50% {\n        transform: scale(1.2);\n    }\n\n    to {\n        transform: scale(1.1);\n    }\n}\n\n.heartBeat {\n    animation-name: heartBeat;\n    animation: heartBeat 0.66s alternate;\n    animation-iteration-count: 8;\n}\n\n\n\n/*\n  =======================================\n\n  sleepy eyes \n\n  =======================================\n  */\n\n@keyframes sleepyEyes {\n    0% {\n        transform: perspective(400px);\n    }\n\n    5% {\n        transform: perspective(400px) rotateX(-20deg);\n        opacity: 0.5;\n    }\n\n    15% {\n        transform: perspective(400px);\n        opacity: 1;\n    }\n\n    35% {\n        transform: perspective(400px) rotateX(-20deg);\n        opacity: 0.75;\n    }\n\n    45% {\n        transform: perspective(400px) rotateX(-2deg);\n        opacity: 1;\n    }\n\n    to {\n        transform: perspective(400px) rotateX(-90deg);\n        opacity: 0;\n    }\n}\n\n.sleepyEyes {\n    animation-name: sleepyEyes;\n    animation-duration: 5s;\n    backface-visibility: visible !important;\n}\n\n\n/*\n  =======================================\n\n   plummit \n\n  =======================================\n  */\n\n@keyframes plummit {\n    from {\n        opacity: 1;\n        transform: scale(10);\n    }\n\n    to {\n        opacity: 1;\n        transform: scale(0);\n    }\n}\n\n.plummit {\n    animation-timing-function: ease-in-out;\n    animation-name: plummit;\n    animation-duration: 5s;\n}\n\n\n\n/*\n  =======================================\n\n  drop it like it's hot \n\n  =======================================\n  */\n\n@keyframes dropItLikeItsHot {\n    from {\n        opacity: 1;\n        transform: none;\n    }\n\n    to {\n        opacity: 1;\n        transform: translate3d(0, 1000px, 0);\n    }\n}\n\n.dropItLikeItsHot {\n    animation-name: dropItLikeItsHot;\n    animation-duration: 0.5s;\n}\n\n\n/*\n  =======================================\n\n  gettin' lifted - added opacity/fill-mode for fade in, changed translate3d to 200 500 0 for diagonal effect, changed timing to 1.5s  \n  =======================================\n  */\n\n@keyframes gettinLifted {\n    from {\n        opacity: 0;\n        transform: translate3d(200px, 500px, 0);\n        transform: scale(1.7, 50%)\n    }\n\n    to {\n        opacity: 1;\n        transform: scale(1);\n    }\n}\n\n.gettinLifted {\n    animation-name: gettinLifted;\n    animation-duration: 1.5s;\n    animation-fill-mode: forwards;\n    opacity: 0;\n    scale: 1\n}\n\n/*\n  =======================================\n\n  chameleon scale: 1.7 50%; \n\n  =======================================\n  */\n\n@keyframes chameleon {\n\n    0% {\n        color: red;\n    }\n\n    14.2999% {\n        color: orange;\n    }\n\n    28.5999% {\n        color: yellow;\n    }\n\n    42.8998% {\n        color: green;\n    }\n\n    57.1996% {\n        color: blue;\n    }\n\n    71.4995% {\n        color: indigo;\n    }\n\n    85.7994% {\n        color: violet;\n    }\n\n    100% {\n        color: red;\n    }\n}\n\n.chameleon {\n    animation-name: chameleon;\n    animation-duration: 5s;\n}\n\n\n\n /* =======================================\n  \n  backdrop \n  \n  =======================================\n  */\n\n@keyframes backdrop {\n\n    0% {\n        background-color: red;\n        color: white\n    }\n\n    14.2999% {\n        background-color: orange;\n        color: black\n    }\n\n    28.5999% {\n        background-color: yellow;\n        color: black\n    }\n\n    42.8998% {\n        background-color: green;\n        color: white\n    }\n\n    57.1996% {\n        background-color: blue;\n        color: white\n    }\n\n    71.4995% {\n        background-color: indigo;\n        color: white\n    }\n\n    85.7994% {\n        background-color: violet;\n        color: white\n    }\n\n    100% {\n        background-color: red;\n        color: white\n    }\n}\n\n.backdrop {\n    animation-name: backdrop;\n    animation-duration: 10s;\n}\n\n/*altered classes. originals are from https://kristofferandreasen.github.io/wickedCSS/*/\n\n.barrelRoll,\n.fadeIn,\n.floater,\n.heartbeat,\n.pulse,\n.rollerLeft,\n.rollerRight,\n.rotateIn,\n.rotateInLeft,\n.rotateInRight,\n.rotation,\n.shake,\n.sideToSide,\n.slideDown,\n.slideLeft,\n.slideRight,\n.slideUp,\n.spinner,\n.wiggle,\n.zoomer,\n.zoomerOut {\n    visibility: visible !important\n}\n\n.rotation {\n    animation-name: rotation;\n    -webkit-animation-name: rotation;\n    animation-duration: 4s;\n    -webkit-animation-duration: 4s;\n    animation-timing-function: linear;\n    -webkit-animation-timing-function: linear;\n    animation-iteration-count: infinite\n}\n\n.rotation,\n.sideToSide {\n    -webkit-animation-iteration-count: infinite;\n    animation-iteration-count: infinite;\n}\n\n@-webkit-keyframes rotation {\n    from {\n        -webkit-transform: rotate(0) translateX(50%) rotate(0)\n    }\n\n    to {\n        -webkit-transform: rotate(360deg) translateX(50%) rotate(-360deg)\n    }\n}\n\n@keyframes rotation {\n    from {\n        transform: rotate(0) translateX(50%) rotate(0)\n    }\n\n    to {\n        transform: rotate(360deg) translateX(50%) rotate(-360deg)\n    }\n}\n\n.sideToSide {\n    animation-name: sideToSide;\n    -webkit-animation-name: sideToSide;\n    animation-duration: 3s;\n    -webkit-animation-duration: 3s;\n    animation-timing-function: ease;\n    -webkit-animation-timing-function: ease;\n    animation-iteration-count: infinite\n}\n\n@-webkit-keyframes sideToSide {\n\n    0%,\n    100% {\n        -webkit-transform: translate(100%, 0)\n    }\n\n    50% {\n        -webkit-transform: translate(-100%, 0)\n    }\n}\n\n@keyframes sideToSide {\n\n    0%,\n    100% {\n        transform: translate(100%, 0)\n    }\n\n    50% {\n        transform: translate(-100%, 0)\n    }\n}\n\n.zoomer {\n    animation-name: zoomer;\n    -webkit-animation-name: zoomer;\n    -webkit-animation-duration: 0.5s;\n    -webkit-animation-timing-function: cubic-bezier(.5, .2, .3, 1);\n    animation-iteration-count: 1\n}\n\n.zoomer,\n.zoomerOut {\n    -webkit-animation-iteration-count: 1;\n    animation-timing-function: cubic-bezier(.5, .2, .3, 1);\n    animation-duration: 1s\n}\n\n@-webkit-keyframes zoomer {\n    0% {\n        -webkit-transform: scale(.3)\n    }\n\n    100% {\n        -webkit-transform: scale(1)\n    }\n}\n\n@keyframes zoomer {\n    0% {\n        transform: scale(.3)\n    }\n\n    100% {\n        transform: scale(1)\n    }\n}\n\n.zoomerOut {\n    animation-name: zoomerOut;\n    -webkit-animation-name: zoomerOut;\n    -webkit-animation-duration: 1s;\n    -webkit-animation-timing-function: cubic-bezier(.5, .2, .3, 1);\n    animation-iteration-count: 1;\n    animation-fill-mode: forwards\n}\n\n.rollerRight,\n.zoomerOut {\n    -webkit-animation-fill-mode: forwards\n}\n\n@-webkit-keyframes zoomerOut {\n    0% {\n        -webkit-transform: scale(1)\n    }\n\n    100% {\n        -webkit-transform: scale(0)\n    }\n}\n\n@keyframes zoomerOut {\n    0% {\n        transform: scale(1)\n    }\n\n    100% {\n        transform: scale(0)\n    }\n}\n\n.spinner {\n    animation-name: spinner;\n    -webkit-animation-name: spinner;\n    -webkit-animation-duration: 2s;\n    -webkit-animation-timing-function: linear;\n    -webkit-animation-iteration-count: infinite;\n    animation-iteration-count: infinite\n}\n\n.pulse,\n.spinner {\n    animation-timing-function: linear;\n    animation-duration: 2s\n}\n\n@-webkit-keyframes spinner {\n    from {\n        -webkit-transform: rotate(0)\n    }\n\n    to {\n        -webkit-transform: rotate(360deg)\n    }\n}\n\n@keyframes spinner {\n    from {\n        transform: rotate(0)\n    }\n\n    to {\n        transform: rotate(360deg)\n    }\n}\n\n.pulse {\n    animation-name: pulse;\n    -webkit-animation-name: pulse;\n    -webkit-animation-duration: 2s;\n    -webkit-animation-timing-function: linear;\n    animation-iteration-count: infinite;\n    -webkit-animation-iteration-count: infinite\n}\n\n@keyframes pulse {\n\n    0%,\n    100% {\n        transform: scale(.9);\n        opacity: .9\n    }\n\n    50% {\n        transform: scale(1);\n        opacity: 1\n    }\n}\n\n@-webkit-keyframes pulse {\n\n    0%,\n    100% {\n        -webkit-transform: scale(.95);\n        opacity: .9\n    }\n\n    50% {\n        -webkit-transform: scale(1);\n        opacity: 1\n    }\n}\n\n.shake {\n    animation-name: shake;\n    -webkit-animation-name: shake;\n    -webkit-animation-duration: .4s;\n    -webkit-animation-timing-function: ease;\n    -webkit-animation-iteration-count: 1\n}\n\n.barrelRoll,\n.shake {\n    animation-iteration-count: 1;\n    animation-timing-function: ease;\n    animation-duration: .4s\n}\n\n@keyframes shake {\n\n    0%,\n    100% {\n        transform: translateX(0)\n    }\n\n    16%,\n    50%,\n    83% {\n        transform: translateX(-10px)\n    }\n\n    33%,\n    66% {\n        transform: translateX(10px)\n    }\n}\n\n@-webkit-keyframes shake {\n\n    0%,\n    100% {\n        -webkit-transform: translateX(0)\n    }\n\n    16%,\n    50%,\n    83% {\n        -webkit-transform: translateX(-10px)\n    }\n\n    33%,\n    66% {\n        -webkit-transform: translateX(10px)\n    }\n}\n\n.barrelRoll {\n    animation-name: barrelRoll;\n    -webkit-animation-name: barrelRoll;\n    -webkit-animation-duration: .4s;\n    -webkit-animation-timing-function: ease;\n    -webkit-animation-iteration-count: 1\n}\n\n@keyframes barrelRoll {\n    from {\n        transform: rotate(0)\n    }\n\n    to {\n        transform: rotate(360deg)\n    }\n}\n\n@-webkit-keyframes barrelRoll {\n    from {\n        -webkit-transform: rotate(0)\n    }\n\n    to {\n        -webkit-transform: rotate(360deg)\n    }\n}\n\n.floater {\n    animation-name: floater;\n    -webkit-animation-name: floater;\n    animation-duration: 1.5s;\n    -webkit-animation-duration: 1.5s;\n    -webkit-animation-iteration-count: infinite\n}\n\n.floater,\n.wiggle {\n    animation-iteration-count: infinite\n}\n\n@keyframes floater {\n\n    0%,\n    100% {\n        transform: translateY(0)\n    }\n\n    50% {\n        transform: translateY(8%)\n    }\n}\n\n@-webkit-keyframes floater {\n\n    0%,\n    100% {\n        -webkit-transform: translateY(0)\n    }\n\n    50% {\n        -webkit-transform: translateY(8%)\n    }\n}\n\n.wiggle {\n    animation-name: wiggle;\n    -webkit-animation-name: wiggle;\n    animation-duration: 2.5s;\n    -webkit-animation-duration: 2.5s;\n    -webkit-animation-iteration-count: infinite\n}\n\n@keyframes wiggle {\n\n    0%,\n    100% {\n        transform: rotate(-4deg)\n    }\n\n    50% {\n        transform: rotate(4deg)\n    }\n}\n\n@-webkit-keyframes wiggle {\n\n    0%,\n    100% {\n        -webkit-transform: rotate(-4deg)\n    }\n\n    50% {\n        -webkit-transform: rotate(4deg)\n    }\n}\n\n.pound {\n    animation-name: pound;\n    -webkit-animation-name: pound;\n    animation-duration: .5s;\n    -webkit-animation-duration: .5s;\n    -webkit-animation-timing-function: ease;\n    -webkit-animation-iteration-count: infinite;\n    visibility: visible !important\n}\n\n.heartbeat,\n.pound {\n    animation-iteration-count: infinite;\n    animation-timing-function: ease\n}\n\n@keyframes pound {\n    to {\n        transform: scale(1.2)\n    }\n}\n\n@-webkit-keyframes pound {\n    to {\n        transform: scale(1.2)\n    }\n}\n\n.heartbeat {\n    animation-name: heartbeat;\n    -webkit-animation-name: heartbeat;\n    animation-duration: 3s;\n    -webkit-animation-duration: 3s;\n    -webkit-animation-timing-function: ease;\n    -webkit-animation-iteration-count: infinite\n}\n\n@keyframes heartbeat {\n\n    0%,\n    100% {\n        transform: scale(1)\n    }\n\n    10% {\n        transform: scale(1.2)\n    }\n\n    20% {\n        transform: scale(1.4)\n    }\n}\n\n@-webkit-keyframes heartbeat {\n\n    0%,\n    100% {\n        -webkit-transform: scale(1)\n    }\n\n    10% {\n        -webkit-transform: scale(1.2)\n    }\n\n    20% {\n        -webkit-transform: scale(1.4)\n    }\n}\n\n.rollerRight {\n    animation-name: rollerRight;\n    -webkit-animation-name: rollerRight;\n    animation-duration: 2s;\n    -webkit-animation-duration: 2s;\n    -webkit-animation-timing-function: ease;\n    -webkit-animation-iteration-count: 1;\n    animation-fill-mode: forwards\n}\n\n.rollerLeft,\n.rollerRight {\n    animation-iteration-count: 1;\n    animation-timing-function: ease\n}\n\n@keyframes rollerRight {\n    0% {\n        transform: translateX(-200px) rotate(0);\n        opacity: 0\n    }\n\n    100% {\n        transform: translateX(0) rotate(2turn);\n        opacity: 1\n    }\n}\n\n@-webkit-keyframes rollerRight {\n    0% {\n        -webkit-transform: translateX(-200px) rotate(0);\n        opacity: 0\n    }\n\n    100% {\n        -webkit-transform: translateX(0) rotate(2turn);\n        opacity: 1\n    }\n}\n\n.rollerLeft {\n    animation-name: rollerLeft;\n    -webkit-animation-name: rollerLeft;\n    animation-duration: 2s;\n    -webkit-animation-duration: 2s;\n    -webkit-animation-timing-function: ease;\n    -webkit-animation-iteration-count: 1;\n    animation-fill-mode: forwards\n}\n\n.fadeOut,\n.rollerLeft {\n    -webkit-animation-fill-mode: forwards\n}\n\n@keyframes rollerLeft {\n    0% {\n        transform: translateX(200px) rotate(0);\n        opacity: 0\n    }\n\n    100% {\n        transform: translateX(0) rotate(-2turn);\n        opacity: 1\n    }\n}\n\n@-webkit-keyframes rollerLeft {\n    0% {\n        -webkit-transform: translateX(200px) rotate(0);\n        opacity: 0\n    }\n\n    100% {\n        -webkit-transform: translateX(0) rotate(-2turn);\n        opacity: 1\n    }\n}\n\n.slideDown {\n    animation-name: slideDown;\n    -webkit-animation-name: slideDown;\n    -webkit-animation-duration: 1s;\n    -webkit-animation-timing-function: ease\n}\n\n.slideDown,\n.slideUp {\n    animation-timing-function: ease;\n    animation-duration: 1s\n}\n\n@keyframes slideDown {\n    0% {\n        transform: translateY(-100%);\n        opacity: 0\n    }\n\n    100% {\n        transform: translateY(0);\n        opacity: 1\n    }\n}\n\n@-webkit-keyframes slideDown {\n    0% {\n        -webkit-transform: translateY(-100%);\n        opacity: 0\n    }\n\n    100% {\n        -webkit-transform: translateY(0);\n        opacity: 1\n    }\n}\n\n.slideUp {\n    animation-name: slideUp;\n    -webkit-animation-name: slideUp;\n    -webkit-animation-duration: 1s;\n    -webkit-animation-timing-function: ease\n}\n\n@keyframes slideUp {\n    0% {\n        transform: translateY(100%);\n        opacity: 0\n    }\n\n    100% {\n        transform: translateY(0);\n        opacity: 1\n    }\n}\n\n@-webkit-keyframes slideUp {\n    0% {\n        -webkit-transform: translateY(100%);\n        opacity: 0\n    }\n\n    100% {\n        -webkit-transform: translateY(0);\n        opacity: 1\n    }\n}\n\n.slideLeft {\n    animation-name: slideLeft;\n    -webkit-animation-name: slideLeft;\n    animation-duration: 1s;\n    -webkit-animation-duration: 1s;\n    -webkit-animation-timing-function: ease\n}\n\n.slideLeft,\n.slideRight {\n    animation-timing-function: ease\n}\n\n@keyframes slideLeft {\n    0% {\n        transform: translateX(150%);\n        opacity: 0\n    }\n\n    100% {\n        transform: translateX(0);\n        opacity: 1\n    }\n}\n\n@-webkit-keyframes slideLeft {\n    0% {\n        -webkit-transform: translateX(150%);\n        opacity: 0\n    }\n\n    100% {\n        -webkit-transform: translateX(0);\n        opacity: 1\n    }\n}\n\n.slideRight {\n    animation-name: slideRight;\n    -webkit-animation-name: slideRight;\n    animation-duration: 1s;\n    -webkit-animation-duration: 1s;\n    -webkit-animation-timing-function: ease\n}\n\n@keyframes slideRight {\n    0% {\n        transform: translateX(-150%);\n        opacity: 0\n    }\n\n    100% {\n        transform: translateX(0);\n        opacity: 1\n    }\n}\n\n@-webkit-keyframes slideRight {\n    0% {\n        -webkit-transform: translateX(-150%);\n        opacity: 0\n    }\n\n    100% {\n        -webkit-transform: translateX(0);\n        opacity: 1\n    }\n}\n\n.fadeIn {\n    animation-name: fadeIn;\n    -webkit-animation-name: fadeIn;\n    -webkit-animation-duration: 2s;\n    -webkit-animation-timing-function: ease\n}\n\n.fadeIn,\n.fadeOut {\n    animation-timing-function: ease;\n    animation-duration: 2s\n}\n\n@keyframes fadeIn {\n    0% {\n        opacity: 0\n    }\n\n    100% {\n        opacity: 1\n    }\n}\n\n@-webkit-keyframes fadeIn {\n    0% {\n        opacity: 0\n    }\n\n    100% {\n        opacity: 1\n    }\n}\n\n.fadeOut {\n    animation-name: fadeOut;\n    -webkit-animation-name: fadeOut;\n    -webkit-animation-duration: 2s;\n    -webkit-animation-timing-function: ease;\n    animation-fill-mode: forwards\n}\n\n@keyframes fadeOut {\n    0% {\n        opacity: 1\n    }\n\n    100% {\n        opacity: 0\n    }\n}\n\n@-webkit-keyframes fadeOut {\n    0% {\n        opacity: 1\n    }\n\n    100% {\n        opacity: 0\n    }\n}\n\n.rotateInRight {\n    animation-name: rotateInRight;\n    -webkit-animation-name: rotateInRight;\n    animation-duration: 3s;\n    -webkit-animation-duration: 3s;\n    -webkit-animation-timing-function: ease-in-out;\n    animation-timing-function: ease-in-out;\n    -webkit-animation-iteration-count: 1;\n    animation-iteration-count: 1\n}\n\n.rotateInLeft,\n.rotateInRight {\n    animation-timing-function: ease-in-out\n}\n\n@-webkit-keyframes rotateInRight {\n    from {\n        -webkit-transform: rotate(0) translateX(100%) rotate(0)\n    }\n\n    to {\n        -webkit-transform: rotate(360deg) translateX(0) rotate(-360deg)\n    }\n}\n\n@keyframes rotateInRight {\n    from {\n        transform: rotate(0) translateX(100%) rotate(0)\n    }\n\n    to {\n        transform: rotate(360deg) translateX(0) rotate(-360deg)\n    }\n}\n\n.rotateInLeft {\n    animation-name: rotateInLeft;\n    -webkit-animation-name: rotateInLeft;\n    animation-duration: 3s;\n    -webkit-animation-duration: 3s;\n    -webkit-animation-timing-function: ease-in-out;\n    animation-iteration-count: 1\n}\n\n.rotateIn,\n.rotateInLeft {\n    -webkit-animation-iteration-count: 1\n}\n\n@-webkit-keyframes rotateInLeft {\n    from {\n        -webkit-transform: rotate(0) translateX(-100%) rotate(0)\n    }\n\n    to {\n        -webkit-transform: rotate(360deg) translateX(0) rotate(-360deg)\n    }\n}\n\n@keyframes rotateInLeft {\n    from {\n        transform: rotate(0) translateX(-100%) rotate(0)\n    }\n\n    to {\n        transform: rotate(360deg) translateX(0) rotate(-360deg)\n    }\n}\n\n.rotateIn {\n    animation-name: rotateIn;\n    -webkit-animation-name: rotateIn;\n    animation-duration: 3s;\n    -webkit-animation-duration: 3s;\n    animation-timing-function: ease;\n    -webkit-animation-timing-function: ease;\n    animation-iteration-count: 1;\n    -webkit-transform-origin: center;\n    transform-origin: center\n}\n\n@-webkit-keyframes rotateIn {\n    0% {\n        -webkit-transform: rotate3d(0, 0, 1, -720deg);\n        transform: rotate3d(0, 0, 1, -720deg);\n        opacity: 0\n    }\n\n    100% {\n        -webkit-transform-origin: center;\n        transform-origin: center;\n        -webkit-transform: none;\n        transform: none;\n        opacity: 1\n    }\n}\n\n@keyframes rotateIn {\n    0% {\n        -webkit-transform: rotate3d(0, 0, 1, -720deg);\n        transform: rotate3d(0, 0, 1, -720deg);\n        opacity: 0\n    }\n\n    100% {\n        -webkit-transform: none;\n        transform: none;\n        opacity: 1\n    }\n}\n\n.bounceIn {\n    -webkit-animation-name: bounceIn;\n    animation-name: bounceIn;\n    -webkit-animation-duration: .8s;\n    animation-duration: .8s;\n    -webkit-animation-timing-function: cubic-bezier(.215, .61, .355, 1);\n    animation-timing-function: cubic-bezier(.215, .61, .355, 1)\n}\n\n@-webkit-keyframes bounceIn {\n    0% {\n        opacity: 0;\n        -webkit-transform: scale3d(.3, .3, .3);\n        transform: scale3d(.3, .3, .3)\n    }\n\n    20% {\n        -webkit-transform: scale3d(1.1, 1.1, 1.1);\n        transform: scale3d(1.1, 1.1, 1.1)\n    }\n\n    40% {\n        -webkit-transform: scale3d(.9, .9, .9);\n        transform: scale3d(.9, .9, .9)\n    }\n\n    60% {\n        opacity: 1;\n        -webkit-transform: scale3d(1.03, 1.03, 1.03);\n        transform: scale3d(1.03, 1.03, 1.03)\n    }\n\n    80% {\n        -webkit-transform: scale3d(.97, .97, .97);\n        transform: scale3d(.97, .97, .97)\n    }\n\n    100% {\n        opacity: 1;\n        -webkit-transform: scale3d(1, 1, 1);\n        transform: scale3d(1, 1, 1)\n    }\n}\n\n@keyframes bounceIn {\n    0% {\n        opacity: 0;\n        -webkit-transform: scale3d(.3, .3, .3);\n        transform: scale3d(.3, .3, .3)\n    }\n\n    20% {\n        -webkit-transform: scale3d(1.1, 1.1, 1.1);\n        transform: scale3d(1.1, 1.1, 1.1)\n    }\n\n    40% {\n        -webkit-transform: scale3d(.9, .9, .9);\n        transform: scale3d(.9, .9, .9)\n    }\n\n    60% {\n        opacity: 1;\n        -webkit-transform: scale3d(1.03, 1.03, 1.03);\n        transform: scale3d(1.03, 1.03, 1.03)\n    }\n\n    80% {\n        -webkit-transform: scale3d(.97, .97, .97);\n        transform: scale3d(.97, .97, .97)\n    }\n\n    100% {\n        opacity: 1;\n        -webkit-transform: scale3d(1, 1, 1);\n        transform: scale3d(1, 1, 1)\n    }\n}"
+	},
+	"blocks": {
+		"block_1": [
+			"243.667px",
+			"578.892px",
+			"block",
+			"#ffd4d4"
+		],
+		"block_2": [
+			"676.75px",
+			"598.45px",
+			"block",
+			false
+		]
+	},
+	"block_1": [
+		{
+			"background_image": "dadsflowershop.png",
+			"dialogs": [
+				{
+					"text": {
+						"en": "Welcome back to SPKY4! THE ULTIMATE in SpookyTown News.",
+						"className": "text"
+					},
+					"color_text": "#0091ff",
+					"color": "rgba(217,0,82,0.82)",
+					"video": {
+						"url": "",
+						"fit": "cover"
+					},
+					"art": [
+						{
+							"position": [
+								"-9.54%",
+								0,
+								"19.42%",
+								0
+							],
+							"size": [
+								"62.85%",
+								"58.26%"
+							],
+							"url": "bigmanhello.png",
+							"fit": "contain",
+							"hotspot": [
+								"0%",
+								"0%"
+							],
+							"className": "fade_in_up "
+						}
+					],
+					"name": "News Caster: BlueGooGary"
+				},
+				{
+					"text": {
+						"en": "If you're just joining us, we are looking at an aerial view of Downtown as we await the mayor to give his annual address!",
+						"className": "text"
+					},
+					"color_text": "#0091ff",
+					"color": "rgba(217,0,82,0.82)",
+					"art": [
+						{
+							"position": [
+								"-12.48%",
+								0,
+								"9.15%",
+								0
+							],
+							"size": [
+								"74.14%",
+								"67.86%"
+							],
+							"url": {
+								"en": "bigmanfistbump.png"
+							},
+							"fit": "contain",
+							"hotspot": [
+								"0%",
+								"0%"
+							],
+							"align": [
+								"left",
+								"center"
+							],
+							"className": "fade_in_down"
+						}
+					],
+					"name": "News Caster: BlueGooGary"
+				},
+				{
+					"text": {
+						"en": "Any minute now we'll see the biggest event of our year, and we've been told that The Mayor has HUGE news regarding Halloween!",
+						"className": "text"
+					},
+					"color_text": "#0091ff",
+					"color": "rgba(217,0,82,0.82)",
+					"art": [
+						{
+							"position": [
+								"18.17%",
+								0,
+								"13.93%",
+								0
+							],
+							"size": [
+								"74.14%",
+								"67.86%"
+							],
+							"url": "bigmanclose2.png",
+							"fit": "contain",
+							"hotspot": [
+								"0%",
+								"0%"
+							],
+							"align": [
+								"left",
+								"center"
+							],
+							"className": "fade_in"
+						}
+					],
+					"name": "News Caster: BlueGooGary"
+				},
+				{
+					"text": {
+						"en": "Get pumped dear viewer! I know I am. We should be cutting to the address any minute now...",
+						"className": "text"
+					},
+					"color_text": "#0091ff",
+					"color": "rgba(217,0,82,0.82)",
+					"art": [
+						{
+							"position": [
+								"1.82%",
+								0,
+								"5.42%",
+								0
+							],
+							"size": [
+								"110.11%",
+								"76.93%"
+							],
+							"url": "bigman.png",
+							"fit": "contain",
+							"hotspot": [
+								"0%",
+								"0%"
+							],
+							"className": "swivelChair "
+						}
+					],
+					"name": "News Caster: BlueGooGary"
+				},
+				{
+					"text": {
+						"en": "As the clock tics I can't help but wonder... WHERE IS THE MAYOR?",
+						"className": "text"
+					},
+					"color_text": "#0091ff",
+					"color": "rgba(217,0,82,0.82)",
+					"art": [
+						{
+							"position": [
+								"-2.75%",
+								0,
+								"9.15%",
+								0
+							],
+							"size": [
+								"89.74%",
+								"67.86%"
+							],
+							"url": "bigmanarmsout.png",
+							"fit": "contain",
+							"hotspot": [
+								"0%",
+								"0%"
+							],
+							"align": [
+								"left",
+								"center"
+							],
+							"speed": "linear",
+							"className": "pulse"
+						}
+					],
+					"name": "News Caster: BlueGooGary",
+					"html": ""
+				},
+				{
+					"text": {
+						"en": "Hello? Jesus finally... right... Ahem. Ladies and gentleman The Mayor is finally ready! Lets cut down to the ground to get in on the excitement!",
+						"className": "text"
+					},
+					"color_text": "#0091ff",
+					"color": "rgba(217,0,82,0.82)",
+					"art": [
+						{
+							"position": [
+								"-2.75%",
+								0,
+								"9.15%",
+								0
+							],
+							"size": [
+								"89.74%",
+								"67.86%"
+							],
+							"url": "bigmanhello.png",
+							"fit": "contain",
+							"hotspot": [
+								"0%",
+								"0%"
+							],
+							"align": [
+								"left",
+								"center"
+							],
+							"speed": "linear",
+							"className": "wiggle"
+						}
+					],
+					"name": "News Caster: BlueGooGary",
+					"html": ""
+				}
+			],
+			"background_color": "rgba(100,0,0,0.45)"
+		},
+		{
+			"background_image": "altperspective.png",
+			"dialogs": [
+				{
+					"art": [
+						{
+							"position": [
+								"19.45%",
+								0,
+								"8.56%",
+								0
+							],
+							"size": [
+								"65.98%",
+								"66.95%"
+							],
+							"url": "mayor1.png",
+							"fit": "contain",
+							"hotspot": [
+								"0%",
+								"0%"
+							],
+							"move": "",
+							"className": "gettinLifted",
+							"speed": "ease-in"
+						}
+					],
+					"text": {
+						"en": "GOOOOOOOD MORNING SPOOKYTOWN!",
+						"className": "text"
+					},
+					"name": "char1"
+				},
+				{
+					"art": [
+						{
+							"position": [
+								"-11.72%",
+								0,
+								"19.37%",
+								0
+							],
+							"size": [
+								"65.98%",
+								"66.95%"
+							],
+							"url": "mayorpose.png",
+							"fit": "contain",
+							"hotspot": [
+								"0%",
+								"0%"
+							],
+							"move": "",
+							"className": "gettinInYoFace",
+							"speed": "ease"
+						}
+					],
+					"text": {
+						"en": "I know you're all excited for the biggest moment of the year. Celebrating Halloween has been our most time honored tradition.",
+						"className": "text"
+					},
+					"name": "char1",
+					"variables": [],
+					"html": "",
+					"js": ""
+				},
+				{
+					"art": [
+						{
+							"position": [
+								"-8.60%",
+								0,
+								"-3.49%",
+								0
+							],
+							"size": [
+								"110.73%",
+								"103.26%"
+							],
+							"url": "backgrouds/Horror background/corridor2.jpg",
+							"fit": "fill",
+							"hotspot": [
+								"0%",
+								"0%"
+							],
+							"align": [
+								"left",
+								"center"
+							]
+						},
+						{
+							"position": [
+								"16.15%",
+								0,
+								"-8.52%",
+								0
+							],
+							"size": [
+								"74.68%",
+								"79.19%"
+							],
+							"url": "mayor3.png",
+							"fit": "cover",
+							"hotspot": [
+								"0%",
+								"0%"
+							],
+							"move": "",
+							"className": "zoomer",
+							"speed": "ease"
+						}
+					],
+					"text": {
+						"en": "WHICH IS WHY THIS YEAR YOU'RE GOING TO WISH IT NEVER WAS",
+						"className": "text"
+					},
+					"html": "",
+					"js": ""
+				},
+				{
+					"art": [
+						{
+							"position": [
+								"-19.90%",
+								0,
+								"4.16%",
+								0
+							],
+							"size": [
+								"74.69%",
+								"119.92%"
+							],
+							"url": "mayorpose2.png",
+							"fit": "scale-down",
+							"hotspot": [
+								"0%",
+								"0%"
+							],
+							"move": "",
+							"className": "zoomer",
+							"speed": "ease"
+						}
+					],
+					"text": {
+						"en": "For years we have watched these humans through static",
+						"className": "text"
+					},
+					"html": "",
+					"js": "",
+					"video": {
+						"url": "earth2.mp4",
+						"loop": true
+					},
+					"go_to": "block_2"
+				}
+			],
+			"background_color": "rgb(229,229,255)"
+		}
+	],
+	"block_2": [
+		{
+			"background_image": "backgrouds/Horror background/house3.jpg",
+			"dialogs": [
+				{
+					"art": [
+						{
+							"position": [
+								"14.57%",
+								0,
+								"26.71%",
+								0
+							],
+							"size": [
+								"63.81%",
+								"113.4%"
+							],
+							"url": "mayor1.png",
+							"fit": "scale-down",
+							"hotspot": [
+								"0%",
+								"0%"
+							],
+							"move": "",
+							"className": "fadeOut",
+							"speed": "ease"
+						}
+					],
+					"text": {
+						"en": "We thought they were so cute... In some cases so... cool...",
+						"className": "text2"
+					},
+					"html": "",
+					"js": "",
+					"video": {
+						"url": "cutepeople.mp4",
+						"loop": false
+					},
+					"color_text": "#e0000b",
+					"color": "rgba(255,255,255,0.39)"
+				},
+				{
+					"art": [
+						{
+							"position": [
+								"14.57%",
+								0,
+								"26.71%",
+								0
+							],
+							"size": [
+								"63.81%",
+								"113.4%"
+							],
+							"url": "mayor1.png",
+							"fit": "scale-down",
+							"hotspot": [
+								"0%",
+								"0%"
+							],
+							"move": "",
+							"className": "fadeOut",
+							"speed": "ease"
+						}
+					],
+					"text": {
+						"en": "And we were flattered by Halloween... They dressed like us. So cute. But how could we be so blind?",
+						"className": "text"
+					},
+					"html": "",
+					"js": "",
+					"video": {
+						"url": "bestday.mp4",
+						"loop": false
+					},
+					"color_text": "#000000"
+				},
+				{
+					"art": [
+						{
+							"position": [
+								"14.57%",
+								0,
+								"26.71%",
+								0
+							],
+							"size": [
+								"63.81%",
+								"113.4%"
+							],
+							"url": "mayor1.png",
+							"fit": "scale-down",
+							"hotspot": [
+								"0%",
+								"0%"
+							],
+							"move": "",
+							"className": "fadeOut",
+							"speed": "ease"
+						}
+					],
+					"text": {
+						"en": "Through the static of our interdimensional television screens we forgot a fundamental truth",
+						"className": "text"
+					},
+					"html": "",
+					"js": "",
+					"video": {
+						"url": "tv.mp4",
+						"loop": false
+					},
+					"color_text": "#000000"
+				},
+				{
+					"art": [
+						{
+							"position": [
+								"12.31%",
+								0,
+								"38.31%",
+								0
+							],
+							"size": [
+								"33%",
+								"33%"
+							],
+							"url": "0realhumans/humanween1.png",
+							"fit": "contain",
+							"hotspot": [
+								"0%",
+								"0%"
+							],
+							"className": "fade_in_up"
+						},
+						{
+							"position": [
+								0,
+								"0.28%",
+								"15.11%",
+								0
+							],
+							"size": [
+								"47.81%",
+								"39.68%"
+							],
+							"url": "0realhumans/b1.png",
+							"fit": "contain",
+							"hotspot": [
+								"0%",
+								"0%"
+							],
+							"className": "fade_in_up"
+						},
+						{
+							"position": [
+								"31.80%",
+								0,
+								"16.33%",
+								0
+							],
+							"size": [
+								"33%",
+								"33%"
+							],
+							"url": "0realhumans/w3.png",
+							"fit": "contain",
+							"hotspot": [
+								"0%",
+								"0%"
+							],
+							"className": "fade_in_up"
+						},
+						{
+							"position": [
+								"4.31%",
+								0,
+								"8.39%",
+								0
+							],
+							"size": [
+								"33%",
+								"33%"
+							],
+							"url": "0realhumans/g2.png",
+							"fit": "contain",
+							"hotspot": [
+								"0%",
+								"0%"
+							],
+							"className": "fade_in_up"
+						},
+						{
+							"position": [
+								"32.01%",
+								0,
+								"26.86%",
+								0
+							],
+							"size": [
+								"63.81%",
+								"113.4%"
+							],
+							"url": "mayor1.png",
+							"fit": "contain",
+							"hotspot": [
+								"0%",
+								"0%"
+							],
+							"move": "",
+							"className": "fade_in",
+							"speed": "ease"
+						}
+					],
+					"text": {
+						"en": "They may be cute and cool. They may seem friendly. But we cannot visit their world. Why?",
+						"className": "text"
+					},
+					"html": "",
+					"js": "",
+					"color_text": "#000000"
+				},
+				{
+					"art": [
+						{
+							"position": [
+								"-0.41%",
+								0,
+								"10.43%",
+								0
+							],
+							"size": [
+								"104.94%",
+								"90.45%"
+							],
+							"url": "hostilehuman.png",
+							"fit": "fill",
+							"hotspot": [
+								"0%",
+								"0%"
+							]
+						}
+					],
+					"text": {
+						"en": "Hatred and fear. They would kill us should we step foot through the portal into their realm.",
+						"className": "text2"
+					}
+				},
+				{
+					"art": [
+						{
+							"position": [
+								"-0.41%",
+								0,
+								"10.43%",
+								0
+							],
+							"size": [
+								"104.94%",
+								"90.45%"
+							],
+							"url": "hostilehuman.png",
+							"fit": "fill",
+							"hotspot": [
+								"0%",
+								"0%"
+							]
+						}
+					],
+					"text": {
+						"en": "That is why this year I am officially BANNING the celebration of Halloween.\n",
+						"className": "text"
+					}
+				}
+			]
+		}
+	]
+}
